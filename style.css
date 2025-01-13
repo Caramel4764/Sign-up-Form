@@ -1,0 +1,121 @@
+:root {
+  --credit-height: 20px;
+  font-family:sans-serif;
+  background-color: rgb(246, 246, 246);
+}
+label{
+  font-weight: 600;
+  color:rgb(73, 73, 73);
+}
+.label-div input{
+  height: 20px;
+}
+html, body {
+  margin: 0;
+}
+.wholepage {
+  height: 100vh;
+  display:flex;
+}
+.image-crop {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  position:relative;
+}
+.image-div {
+  position: relative;
+  width: 350px;
+}
+
+.image-div img {
+  height: 100%;
+}
+.credit {
+  font-size: 12px;
+  color: rgb(0, 78, 0);
+}
+.credit-div {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: var(--credit-height);
+  position:relative;
+  bottom: calc(var(--credit-height) + 5px);
+}
+.odin-icon-div {
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  top: 22%;
+  left: 0px;
+}
+.odin-icon-div img {
+  height: 100%;
+  width: 100%;
+}
+.img-div-icon-odin {
+  height: 100%;
+}
+.odin-icon-div p {
+  font-size: 50px;
+  letter-spacing: 8px;
+  color: white;
+  font-family: 'Pacifico', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text-div {
+  flex:1;
+
+}
+.form-div {
+  display: grid;
+  gap: 60px;
+  grid-template-columns: repeat(2, minmax(200px, 30%));
+}
+@media only screen and (max-width: 800px) {
+  .form-div {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(1, minmax(200px, 30%));
+  }
+}
+.label-div {
+  display:flex;
+  flex-direction: column;
+}
+.field-input {
+  width: 100%;
+  margin: 0;
+  padding: 40px 30px;
+  border:none;
+  box-shadow: 0px 5px 4px rgb(187, 187, 187);
+  background-color: white;
+}
+.login {
+  margin: 15px 40px;
+}
+.center-div {
+  width: 100%;
+  display:flex;
+  align-items: center;
+  height: 100vh;
+}
+.form-footer {
+  margin-left: 40px;
+  margin-top: 30px;
+}
+.form-footer button {
+  background-color: rgb(38, 88, 38);
+  color: white;
+  border:none;
+  border-radius: 6px;
+  padding: 15px 40px;
+}
