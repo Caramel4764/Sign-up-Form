@@ -33,41 +33,45 @@
                 <label for="f-name">
                   First Name
                 </label>
-                <input type="text" id="f-name">
+                <input required type="text" id="f-name">
               </div>
               <div class="label-div">
                 <label for="l-name">
                   Last Name
                 </label>
-                <input type="text" id="l-name">
+                <input required type="text" id="l-name">
               </div>
               <div class="label-div">
                 <label for="email">
                   Email
                 </label>
-                <input type="text" id="email">
+                <input required type="email" id="email">
               </div>
               <div class="label-div">
                 <label for="phone-num">
                   Phone Number
                 </label>
-                <input type="text" id="phone-num">
+                <input required type="tel" id="phone-num">
               </div>
               <div class="label-div">
-                <label for="l-name">
+                <label for="password">
                   Password
                 </label>
-                <input type="text" id="l-name">
+                <input required type="password" id="password">
               </div>
               <div class="label-div">
-                <label for="l-name">
+                <label for="password-confirm">
                   Confirm Password
                 </label>
-                <input type="text" id="l-name">
+                <input required type="password" id="password-confirm">
               </div>
             </div>
           </fieldset>
           <div class="form-footer">
+            <ul class="checkboxes">
+              <li><input id="condition" required type="checkbox"><label for="condition">I have read the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a></label></li>
+              <li><input id="newsleter" type="checkbox"><label for="newsleter">I would like to sign up for the monthly newsletter</a></label></li>
+            </ul>
             <button type="submit" id="submit">Create Account</button>
             <p>Already have an account? <a href="#">Log in</a></p>
           </div>
@@ -75,5 +79,6 @@
       </div>
     </div>
   </div>
+  <script src="./index.js"></script>
 </body>
 </html>

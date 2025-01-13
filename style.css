@@ -26,7 +26,7 @@ html, body {
 }
 .image-div {
   position: relative;
-  width: 350px;
+  width: 400px;
 }
 
 .image-div img {
@@ -77,7 +77,8 @@ html, body {
 }
 .form-div {
   display: grid;
-  gap: 60px;
+  column-gap: 60px;
+  row-gap: 30px;
   grid-template-columns: repeat(2, minmax(200px, 30%));
 }
 @media only screen and (max-width: 800px) {
@@ -92,7 +93,6 @@ html, body {
   flex-direction: column;
 }
 .field-input {
-  width: 100%;
   margin: 0;
   padding: 40px 30px;
   border:none;
@@ -101,6 +101,7 @@ html, body {
 }
 .login {
   margin: 15px 40px;
+  margin-top: 0px;
 }
 .center-div {
   width: 100%;
@@ -113,9 +114,37 @@ html, body {
   margin-top: 30px;
 }
 .form-footer button {
-  background-color: rgb(38, 88, 38);
+  background-color: rgb(37, 67, 37);
   color: white;
   border:none;
   border-radius: 6px;
   padding: 15px 40px;
+}
+input:invalid{
+  border: 1px solid red
+}
+input:focus {
+  border: 1px solid blue;
+  outline-width: 0;
+  box-shadow: 0px 0px 3px gray;
+}
+input {
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 5px;
+}
+.checkboxes {
+  margin: 0px;
+  list-style-type: none;
+  padding:0px;
+  padding-bottom: 10px;
+}
+.checkboxes li {
+  margin-bottom: 10px;
+}
+a {
+  color: rgb(37, 67, 37);
+}
+.credit-div p, .credit-div p a {
+  color: white;
 }
